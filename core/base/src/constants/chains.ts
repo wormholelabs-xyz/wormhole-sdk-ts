@@ -47,6 +47,7 @@ const chainIdAndChainEntries = [
   [   53, "Converge"       ],
   [   55, "Plume"          ],
   [   57, "XRPLEVM"        ],
+  [   75, "Canton"         ],
   [ 3104, "Wormchain"      ],
   [ 4000, "Cosmoshub"      ],
   [ 4001, "Evmos"          ],
