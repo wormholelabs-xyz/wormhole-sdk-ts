@@ -54,6 +54,7 @@ const chainIdAndChainEntries = [
   [   69, "Nexus"          ],
   [   71, "Arc"            ],
   [   73, "Hydration"      ],
+  [   75, "Canton"         ],
   [ 3104, "Wormchain"      ],
   [ 4000, "Cosmoshub"      ],
   [ 4001, "Evmos"          ],

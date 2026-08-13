@@ -87,6 +87,9 @@ const platformAndChainsEntries = [[
   ]], [
     "Xrpl", [
       "Xrpl"
+  ]], [
+    "Canton", [
+      "Canton"
   ]]
 ] as const satisfies MapLevel<string, RoArray<Chain>>;
 
@@ -114,6 +117,7 @@ const platformAddressFormatEntries = [
   ["Near",      "sha256"],
   ["Stacks",    "keccak256"],
   ["Xrpl",      "base58"],
+  ["Canton",    "hex"],
 ] as const;
 
 export const platformToAddressFormat = constMap(platformAddressFormatEntries);

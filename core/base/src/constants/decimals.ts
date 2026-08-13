@@ -15,6 +15,7 @@ const nativeDecimalEntries = [
   ["Near",        12],
   ["Stacks",       6],
   ["Xrpl",         6],
+  ["Canton",      10],
 ] as const satisfies MapLevel<Platform, number>;
 
 /** Number of decimals for the native token on a given platform */

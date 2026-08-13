@@ -79,6 +79,7 @@ const finalityThresholds = [
   ["Nexus",      1],
   ["Arc",        1],
   ["Hydration",  5], // Inferred from Polkadot 
+  ["Canton",     0],
   // Testnets
   ["Sepolia", 72],
   ["ArbitrumSepolia", 4096],
@@ -158,6 +159,7 @@ const blockTimeMilliseconds = [
   ["Nexus",             1_000],
   ["Arc",               1_000],
   ["Hydration",        30_000],
+  ["Canton",            1_000],
 ] as const satisfies MapLevel<Chain, number>;
 
 /** The amount of time between block production, in milliseconds  */
