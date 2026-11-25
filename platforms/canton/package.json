@@ -1,0 +1,70 @@
+{
+  "name": "@wormhole-foundation/sdk-canton",
+  "version": "1.20.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wormhole-foundation/wormhole-sdk-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wormhole-foundation/wormhole-sdk-ts/issues"
+  },
+  "homepage": "https://github.com/wormhole-foundation/wormhole-sdk-ts#readme",
+  "directories": {
+    "test": "__tests__"
+  },
+  "license": "Apache-2.0",
+  "main": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "module": "./dist/esm/index.js",
+  "author": "",
+  "description": "SDK for Canton, used in conjunction with @wormhole-foundation/sdk",
+  "files": [
+    "dist/esm"
+  ],
+  "keywords": [
+    "wormhole",
+    "sdk",
+    "typescript",
+    "connect",
+    "canton",
+    "daml"
+  ],
+  "engines": {
+    "node": ">=20.19"
+  },
+  "sideEffects": [
+    "./dist/esm/address.js"
+  ],
+  "scripts": {
+    "build:esm": "tsc -p ./tsconfig.esm.json",
+    "build": "npm run build:esm",
+    "rebuild": "npm run clean && npm run build",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --config ./jest.config.ts",
+    "clean": "rm -rf ./dist && rm -rf ./.turbo",
+    "lint": "npm run prettier && eslint --fix ./src --ext .ts",
+    "prettier": "prettier --write ./src"
+  },
+  "dependencies": {
+    "@wormhole-foundation/sdk-connect": "1.20.0"
+  },
+  "type": "module",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "dist/esm/index.d.ts"
+      ]
+    }
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/esm/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "default": "./dist/esm/index.js"
+    },
+    "./address": {
+      "types": "./dist/esm/address.d.ts",
+      "import": "./dist/esm/address.js",
+      "default": "./dist/esm/address.js"
+    }
+  }
+}

@@ -47,6 +47,7 @@ export const coreBridgeContracts = [[
     ["Robinhood",   "0x141fBa8AD5D61bdaB45A047cF60b5Ad9784987FB"],
     ["Hydration",   "0x3792a6d63c31941B2805181771795D9176fA82A1"],
     ["Elysium",     "0xC8aD24fC6063c41cB5C12a8e3851AafC3b3CF027"]
+    // ["Canton", ...]: the guardianGovernance party id, once the network is deployed
   ]], [
   "Testnet", [
     ["Solana",          "3u8hJUVTA4jH1wYAyUur7FFZVQ8H635K3tSHHF4ssjQ5"],
