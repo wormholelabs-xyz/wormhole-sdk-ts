@@ -70,6 +70,8 @@
     "platforms/stacks",
     "platforms/stacks/protocols/core",
     "platforms/xrpl",
+    "platforms/canton",
+    "platforms/canton/protocols/core",
     "platforms/btc",
     "platforms/algorand",
     "platforms/algorand/protocols/core",

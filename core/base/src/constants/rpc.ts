@@ -58,6 +58,7 @@ const rpcConfig = [[
     ["Arc",         "https://rpc.arc.network"],
     ["Robinhood",   "https://rpc.mainnet.chain.robinhood.com"],
     ["Hydration",   "https://hydration-rpc.n.dwellir.com"],
+    // ["Canton", ...]: no default; the rpc is the JSON Ledger API of the user's own participant
   ]], [
   "Testnet", [
     ["Bsc",             "https://data-seed-prebsc-1-s3.binance.org:8545"],

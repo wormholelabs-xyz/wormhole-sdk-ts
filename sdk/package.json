@@ -142,6 +142,16 @@
       "types": "./dist/esm/btc.d.ts",
       "import": "./dist/esm/btc.js",
       "default": "./dist/esm/btc.js"
+    },
+    "./platforms/canton": {
+      "types": "./dist/esm/platforms/canton.d.ts",
+      "import": "./dist/esm/platforms/canton.js",
+      "default": "./dist/esm/platforms/canton.js"
+    },
+    "./canton": {
+      "types": "./dist/esm/canton.d.ts",
+      "import": "./dist/esm/canton.js",
+      "default": "./dist/esm/canton.js"
     }
   },
   "typesVersions": {
@@ -218,6 +228,14 @@
         "dist/esm/platforms/btc.d.ts",
         "dist/esm/platforms/btc.d.ts"
       ],
+      "canton": [
+        "dist/esm/canton.d.ts",
+        "dist/esm/canton.d.ts"
+      ],
+      "platforms/canton": [
+        "dist/esm/platforms/canton.d.ts",
+        "dist/esm/platforms/canton.d.ts"
+      ],
       "*": [
         "dist/esm/index.d.ts",
         "dist/esm/index.d.ts"
@@ -257,7 +275,9 @@
     "@wormhole-foundation/sdk-stacks": "1.20.0",
     "@wormhole-foundation/sdk-stacks-core": "1.20.0",
     "@wormhole-foundation/sdk-xrpl": "1.20.0",
-    "@wormhole-foundation/sdk-btc": "1.20.0"
+    "@wormhole-foundation/sdk-btc": "1.20.0",
+    "@wormhole-foundation/sdk-canton": "1.20.0",
+    "@wormhole-foundation/sdk-canton-core": "1.20.0"
   },
   "type": "module"
 }
